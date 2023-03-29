@@ -42,7 +42,7 @@ body {
   height: 100%;
 }
 
-#page-content {
+.page-content {
   background-color: lightgrey;
   flex:  1 0 auto;
 }
