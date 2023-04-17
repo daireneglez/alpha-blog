@@ -26,8 +26,12 @@
               Profile [<%= current_user.username %>]
             </a>
             <ul class="dropdown-menu">
-              <%= link_to "View your profile", users_path(current_user), class: "dropdown-item" %>
+              <%= link_to "View your profile", user_path(current_user), class: "dropdown-item" %>
               <%= link_to "Edit your profile", edit_user_path(current_user), class: "dropdown-item" %>
+              <%= link_to "Delete your profile", user_path(current_user), class: "dropdown-item text-danger",
+                          method: :delete,
+                          :onclick => "return confirm('Are you sure?')"
+              %>
             </ul>
           </li>
 
