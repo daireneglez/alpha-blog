@@ -54,6 +54,10 @@ body {
   bottom: 0;
 }
 
+a.badge {
+  text-decoration: none;
+}
+
 /* Pagination styling */
 .flickr_pagination {
   text-align: center;
